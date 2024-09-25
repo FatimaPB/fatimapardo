@@ -18,7 +18,7 @@ const HeaderCifrado = () => {
                 </button>
                 <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
                     <li className="nav-item">
-                        <Link to="/">Guía</Link> {/* Reemplazar <a> por <Link> */}
+                        <Link to="/guia">Guía</Link> {/* Reemplazar <a> por <Link> */}
                     </li>
                     <li className="nav-item">
                         <Link to="/cesar">Cifrado César</Link> {/* Reemplazar <a> por <Link> */}
