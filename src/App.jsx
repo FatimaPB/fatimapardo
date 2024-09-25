@@ -17,10 +17,10 @@ function App() {
     <Router>
         <Header />
         <Routes>
+        <Route path="/" element={<Navigate to="/guia" />} />
+        <Route path="/guia" element={< GuiaUso/>} />
         <Route path="/cesar" element={<CifradoCesar />} />
         <Route path="/escitala" element={< CifradoEscitala/>} />
-        <Route path="/guia" element={< GuiaUso/>} />
-        <Route path="/" element={<Navigate to="/guia" />} />
         </Routes>
     </Router>
   );
