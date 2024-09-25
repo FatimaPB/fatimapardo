@@ -1,0 +1,80 @@
+/* Estilos generales para el encabezado */
+.header {
+  background-color: #f8e1f4; /* Color pastel suave */
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  border-bottom: 3px solid #f7a8d6; /* Borde inferior */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente estilizada */
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Lista de navegación en pantallas grandes */
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px; /* Espaciado entre los enlaces */
+}
+
+/* Estilo de los enlaces */
+.nav-item a {
+  color: #7d4a71; /* Color de texto */
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #f4e5f7; /* Fondo */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item a:hover {
+  background-color: #f7a8d6;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra flotante */
+}
+
+/* Botón hamburguesa oculto en pantallas grandes */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #7d4a71;
+  cursor: pointer;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .hamburger {
+      display: block; /* Mostrar botón en pantallas pequeñas */
+  }
+
+  .nav-list {
+      display: none; /* Ocultar menú en pantallas pequeñas */
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+      background-color: #f8e1f4; /* Fondo del menú desplegable */
+      position: absolute;
+      top: 5px; /* Espaciado desde el header */
+      left: 0;
+      right: 0;
+  }
+
+  .nav-list.open {
+      display: flex; /* Mostrar menú desplegable cuando se abre */
+  }
+
+  .nav-item {
+      text-align: center;
+      margin: 10px 0; /* Espaciado entre los elementos */
+  }
+}
