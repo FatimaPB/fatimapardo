@@ -9,6 +9,12 @@ const HeaderCifrado = () => {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        if (window.innerWidth <= 768) { // Ajusta el ancho máximo según tus necesidades
+            setIsOpen(false);
+        }
+    };
+
     return (
         <header className="header">
             <nav className="navbar">
@@ -18,13 +24,13 @@ const HeaderCifrado = () => {
                 </button>
                 <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
                     <li className="nav-item">
-                        <Link to="/guia">Guía</Link> {/* Reemplazar <a> por <Link> */}
+                        <Link to="/guia" onClick={closeMenu}>Guía</Link> {/* Cerrar menú después de clic en Link */}
                     </li>
                     <li className="nav-item">
-                        <Link to="/cesar">Cifrado César</Link> {/* Reemplazar <a> por <Link> */}
+                        <Link to="/cesar" onClick={closeMenu}>Cifrado César</Link> {/* Cerrar menú después de clic en Link */}
                     </li>
                     <li className="nav-item">
-                        <Link to="/escitala">Cifrado Escítala</Link> {/* Reemplazar <a> por <Link> */}
+                        <Link to="/escitala" onClick={closeMenu}>Cifrado Escítala</Link> {/* Cerrar menú después de clic en Link */}
                     </li>
                 </ul>
             </nav>
