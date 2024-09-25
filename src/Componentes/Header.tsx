@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Importar Link
 import '../Estilos/Header.css';
 
 const HeaderCifrado = () => {
@@ -16,9 +17,15 @@ const HeaderCifrado = () => {
                     ☰
                 </button>
                 <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
-                    <li className="nav-item"><a href="/">Guía</a></li>
-                    <li className="nav-item"><a href="/cesar">Cifrado César</a></li>
-                    <li className="nav-item"><a href="/escitala">Cifrado Escítala</a></li>
+                    <li className="nav-item">
+                        <Link to="/">Guía</Link> {/* Reemplazar <a> por <Link> */}
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/cesar">Cifrado César</Link> {/* Reemplazar <a> por <Link> */}
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/escitala">Cifrado Escítala</Link> {/* Reemplazar <a> por <Link> */}
+                    </li>
                 </ul>
             </nav>
         </header>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../Estilos/CifradoEscitala.css'; // Asegúrate de que este archivo CSS contenga los estilos adecuados.
-
+import { InputNumber } from 'primereact/inputnumber';
 const CifradoEscitala: React.FC = () => {
     const [mensaje, setMensaje] = useState<string>(''); // Mensaje a cifrar o descifrar
     const [clave, setClave] = useState<number>(4); // Número de columnas (clave), predeterminado a 4
@@ -93,15 +93,15 @@ const CifradoEscitala: React.FC = () => {
                 </div>
 
                 <div className="input-group">
-                    <label htmlFor="clave">Número de columnas (clave):</label>
-                    <input
-                        id="clave"
-                        value={clave.toString()}
-                        type="number"
-                        onChange={(e) => setClave(parseInt(e.target.value) || 4)} // Actualiza la clave, predeterminado a 4
-                        min="1"
-                    />
-                </div>
+                <label htmlFor="clave">Número de columnas (clave)</label><h1></h1>
+                        <InputNumber
+                            id="clave"
+                            value={clave}
+                            onValueChange={(e) => setClave(e.value || 4)}
+                            min={1}
+                            max={25}
+                        />
+                    </div>
 
                 <div className="button-group">
                     <button className="primary-button" onClick={cifrarMensaje}>Cifrar</button>
