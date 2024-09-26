@@ -88,7 +88,7 @@ const CifradoEscitala: React.FC = () => {
                         value={mensaje}
                         onChange={(e) => setMensaje(e.target.value)}
                         rows={5}
-                        placeholder="Introduce el mensaje a cifrar o descifrar"
+                        placeholder="Escribe el mensaje a cifrar o descifrar"
                     />
                 </div>
 

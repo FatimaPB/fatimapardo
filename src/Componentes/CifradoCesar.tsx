@@ -25,6 +25,10 @@ const CifradoCesar = () => {
         setResultado(cifrar(texto, 26 - desplazamiento));
     };
 
+         // Función para copiar el resultado al portapapeles
+    const copiarResultado = () => {
+    navigator.clipboard.writeText(resultado);
+        };
     return (
         <div className="cesar-container">
             <div className="cesar-card">
@@ -36,6 +40,7 @@ const CifradoCesar = () => {
                         value={texto}
                         onChange={(e) => setTexto(e.target.value)}
                         rows={4}
+                        placeholder="Escribe el mensaje a cifrar o descifrar"
                     />
                 </div>
 
@@ -54,12 +59,14 @@ const CifradoCesar = () => {
                 <div className="button-group">
                     <button onClick={handleCifrar}>Cifrar Texto</button>
                     <button onClick={handleDescifrar}>Descifrar Texto</button>
+                    <button  onClick={copiarResultado}>Copiar</button>
                 </div>
 
                 <div className="resultado">
                     <h3>Texto Cifrado/Descifrado</h3>
-                    <p>{resultado ? resultado : 'Aquí aparecerá el resultado...'}</p>
+                    <p>{resultado}</p>
                 </div>
+               
             </div>
         </div>
     );
