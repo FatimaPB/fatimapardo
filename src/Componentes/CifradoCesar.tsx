@@ -45,16 +45,19 @@ const CifradoCesar = () => {
                 </div>
 
                 <div className="input-group">
-                    <label htmlFor="desplazamiento">Selecciona Desplazamiento:</label>
-                    <input
-                        id="desplazamiento"
-                        type="number"
-                        value={desplazamiento}
-                        onChange={(e) => setDesplazamiento(Number(e.target.value || 3))}
-                        min={1}
-                        max={25}
-                    />
-                </div>
+        <label htmlFor="desplazamiento">Selecciona Desplazamiento:</label>
+        <input
+            id="desplazamiento"
+            type="number"
+            value={desplazamiento === 0 ? "" : desplazamiento} 
+            onChange={(e) => {
+                const value = Number(e.target.value);
+                setDesplazamiento(value); // Actualiza el estado con el valor numérico
+            }}
+            min={1}
+            max={25}
+        />
+    </div>
 
                 <div className="button-group">
                     <button onClick={handleCifrar}>Cifrar Texto</button>
