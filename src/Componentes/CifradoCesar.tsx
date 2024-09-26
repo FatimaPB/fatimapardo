@@ -50,7 +50,7 @@ const CifradoCesar = () => {
                         id="desplazamiento"
                         type="number"
                         value={desplazamiento}
-                        onChange={(e) => setDesplazamiento(Number(e.target.value))}
+                        onChange={(e) => setDesplazamiento(Number(e.target.value || 3))}
                         min={1}
                         max={25}
                     />
@@ -59,7 +59,7 @@ const CifradoCesar = () => {
                 <div className="button-group">
                     <button onClick={handleCifrar}>Cifrar Texto</button>
                     <button onClick={handleDescifrar}>Descifrar Texto</button>
-                    <button  onClick={copiarResultado}>Copiar</button>
+                         <button  onClick={copiarResultado}>Copiar</button>
                 </div>
 
                 <div className="resultado">
