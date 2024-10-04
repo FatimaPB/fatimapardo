@@ -32,6 +32,18 @@ const HeaderCifrado = () => {
                     <li className="nav-item">
                         <Link to="/escitala" onClick={closeMenu}>Cifrado Escítala</Link> {/* Cerrar menú después de clic en Link */}
                     </li>
+                    <li className="nav-item">
+                        <Link to="/idea" onClick={closeMenu}>Cifrado IDEA</Link> {/* Cerrar menú después de clic en Link */}
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/mqv" onClick={closeMenu}>MQV</Link> {/* Cerrar menú después de clic en Link */}
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/blake" onClick={closeMenu}>Blake3 hash</Link> {/* Cerrar menú después de clic en Link */}
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/frame" onClick={closeMenu}>?</Link> {/* Cerrar menú después de clic en Link */}
+                    </li>
                 </ul>
             </nav>
         </header>

@@ -1,0 +1,80 @@
+.idea-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+    background-color: #f8e1f4; /* Color de fondo */
+}
+
+.idea-card {
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 25px; /* Espaciado interno */
+    width: 100%;
+    max-width: 600px; /* Ancho máximo del card */
+    text-align: center;
+}
+
+h2 {
+    color: #7d4a71; /* Color del título */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px; /* Espaciado entre inputs */
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    color: #7d4a71; /* Color de las etiquetas */
+}
+
+.input-group textarea,
+.input-group input {
+    width: 100%; /* Campo ocupa todo el ancho */
+    padding: 12px; /* Espaciado interno */
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-top: 8px; /* Espacio entre label y input */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espacio entre botones */
+}
+
+.button-group button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f4e5f7;
+    color: #7d4a71;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #f7a8d6;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resultado {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resultado h3 {
+    color: #7d4a71; /* Color del título del resultado */
+}
+
+.resultado p {
+    color: #333; /* Color del texto del resultado */
+    word-break: break-word; /* Romper líneas largas */
+}

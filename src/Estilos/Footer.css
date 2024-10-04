@@ -1,0 +1,29 @@
+.footer-container {
+    background-color: #f4e5f7; /* Fondo claro similar a otros componentes */
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #7d4a71; /* Borde superior para separar visualmente */
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.footer-content p {
+    margin: 8px 0; /* Espaciado entre párrafos */
+    color: #7d4a71; /* Color del texto consistente con el esquema */
+    font-size: 14px;
+}
+
+.footer-content a {
+    color: #7d4a71; /* Color de enlace coherente con otros componentes */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content a:hover {
+    color: #f7a8d6; /* Efecto hover para enlaces */
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}

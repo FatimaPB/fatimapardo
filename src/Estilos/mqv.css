@@ -1,0 +1,56 @@
+.mqv-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+    background-color: #f8e1f4; /* Fondo claro similar */
+}
+
+.mqv-card {
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 25px;
+    width: 100%;
+    max-width: 500px; /* Ancho máximo */
+}
+
+.mqv-card h2 {
+    color: #7d4a71; /* Color del título */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mqv-card button {
+    width: 100%; /* Botón ocupa todo el ancho */
+    padding: 12px;
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: #f4e5f7; /* Color de fondo */
+    color: #7d4a71; /* Color del texto */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.mqv-card button:hover {
+    background-color: #f7a8d6; /* Fondo más oscuro en hover */
+    color: white; /* Texto blanco en hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
+
+.mqv-resultados {
+    margin-top: 20px;
+    text-align: center; /* Centrar el texto */
+}
+
+.mqv-resultados h3 {
+    color: #7d4a71; /* Color de los subtítulos */
+    margin-bottom: 10px;
+}
+
+.mqv-resultados p {
+    color: #333; /* Color del texto */
+    word-wrap: break-word; /* Ajustar texto largo */
+}

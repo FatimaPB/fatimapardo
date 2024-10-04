@@ -1,0 +1,43 @@
+.frame-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+    background-color: #f8e1f4; /* Fondo claro */
+}
+
+.frame-card {
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 25px;
+    width: 100%;
+    max-width: 700px; /* Ancho máximo más grande para contener más texto */
+    font-family: Arial, sans-serif; /* Fuente general */
+}
+
+.frame-card h2 {
+    color: #7d4a71; /* Color del título */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.frame-card p {
+    color: #333; /* Color de texto */
+    line-height: 1.6; /* Espaciado entre líneas para mayor legibilidad */
+    margin-bottom: 15px;
+}
+
+.method-section h3 {
+    color: #7d4a71; /* Color de subtítulos */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.method-section p {
+    color: #555; /* Texto ligeramente más claro que el párrafo general */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

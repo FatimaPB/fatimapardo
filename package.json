@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "blake3": "^2.1.7",
+    "blakejs": "^1.2.1",
     "cors": "^2.8.5",
+    "elliptic": "^6.5.7",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.8.0",

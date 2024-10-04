@@ -1,0 +1,76 @@
+.mqv-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+    background-color: #f8e1f4;
+}
+
+.mqv-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.mqv-card h2 {
+    color: #7d4a71;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mqv-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.mqv-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f4e5f7;
+    color: #7d4a71;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.mqv-button:hover {
+    background-color: #f7a8d6;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mqv-button.disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.mqv-resultados {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.mqv-resultados h3 {
+    color: #7d4a71;
+    margin-bottom: 10px;
+}
+
+.mqv-resultados p {
+    color: #333;
+    word-wrap: break-word;
+}
+
+.copied-message {
+    color: green;
+    margin-top: 10px;
+    font-size: 14px;
+}
