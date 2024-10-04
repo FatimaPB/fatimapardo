@@ -28,7 +28,7 @@ const Frame: React.FC = () => {
         <div className="method-section">
           <h3>3. Blake3 Hash</h3>
           <p>
-            El algoritmo de hash **Blake3** es un sistema de hash criptográfico rápido y seguro que genera un valor de hash de longitud fija (en hexadecimal). Blake3 es altamente eficiente y se ha implementado en este proyecto para verificar la integridad de los datos transmitidos. A diferencia de los métodos de cifrado, Blake3 no cifra datos sino que crea un "resumen" único que se puede comparar para asegurar que los datos no han sido alterados.
+            El algoritmo de hash Blake3 es un sistema de hash criptográfico rápido y seguro que genera un valor de hash de longitud fija (en hexadecimal). Blake3 es altamente eficiente y se ha implementado en este proyecto para verificar la integridad de los datos transmitidos. A diferencia de los métodos de cifrado, Blake3 no cifra datos sino que crea un "resumen" único que se puede comparar para asegurar que los datos no han sido alterados.
           </p>
         </div>
       </div>

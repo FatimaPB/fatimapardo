@@ -1,0 +1,33 @@
+.comparison-container {
+    background-color: #7d4a71; /* Fondo claro en línea con el estilo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 800px;
+    margin: 20px auto; /* Centrado */
+    font-family: 'Arial', sans-serif;
+}
+
+.comparison-content h3 {
+    color:#f8e1f4 ; /* Títulos en púrpura oscuro */
+    margin-bottom: 10px;
+}
+
+.comparison-content p {
+    color: #333; /* Texto oscuro para mejor legibilidad */
+    margin-bottom: 15px;
+}
+
+.comparison-content strong {
+    color: #7d4a71; /* Texto destacado en púrpura oscuro */
+}
+
+.comparison-container h2 {
+    color: #7d4a71; /* Título principal */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comparison-content p:last-of-type {
+    margin-bottom: 0; /* Sin margen inferior en el último párrafo */
+}

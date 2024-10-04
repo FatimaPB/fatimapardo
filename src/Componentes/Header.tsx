@@ -42,6 +42,9 @@ const HeaderCifrado = () => {
                         <Link to="/blake" onClick={closeMenu}>Blake3 hash</Link> {/* Cerrar menú después de clic en Link */}
                     </li>
                     <li className="nav-item">
+                        <Link to="/compar" onClick={closeMenu}>Comparacion framework</Link> {/* Cerrar menú después de clic en Link */}
+                    </li>
+                    <li className="nav-item">
                         <Link to="/frame" onClick={closeMenu}>?</Link> {/* Cerrar menú después de clic en Link */}
                     </li>
                 </ul>

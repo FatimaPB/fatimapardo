@@ -12,6 +12,7 @@ import Blake3Hash from './Componentes/Blake3Hash';
 import MQV from './Componentes/CompMQV';
 import Frame from './Componentes/Frame';
 import Footer from './Componentes/Footer';
+import ComparisonFramework from './Componentes/ComparisonFramework';
 
 
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/idea" element={< CifradoIDEA/>} />
         <Route path="/mqv" element={< MQV/>} />
         <Route path="/blake" element={< Blake3Hash/>} />
+        <Route path="/compar" element={< ComparisonFramework/>} />
         <Route path="/frame" element={< Frame/>} />
         </Routes>
         <Footer />
